@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    a {
+        margin: 0 3vw 0 0;
+        font-weight: 500;
+    }
+    .logo {
+        font-weight: bold;
+        font-size: 1.125rem;
+        margin: 0 10vw 0 0;
+    }
+    .register-btn {
+        background-color: $basicButtonBlue-full;
+        padding: 13px 20px;
+        color: $basicWhite;
+        border-radius: 5px;
+        font-size: 0.875rem;
+        margin: 0 0 0 0;
+    }
+}
+
+// ################################################################################
+// ################################# MediaQueries #################################
+// ################################################################################
+
+@media only screen and (max-width: 450px) {
+    nav {
+        a {
+        }
+        .logo {
+        }
+        .register-btn {
+        }
+    }
+}

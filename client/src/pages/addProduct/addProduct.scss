@@ -1,0 +1,130 @@
+.addProduct-Sec {
+    background: url("../../img/addProduct.svg") center no-repeat;
+    background-size: 100%;
+    padding: 0 0 10% 0;
+    margin: 10% 0 0 0;
+    form {
+        .formWrap-Div {
+            width: 65%;
+            display: flex;
+            align-items: center;
+            margin: 5% 0 5% 10%;
+            p {
+                width: 25%;
+            }
+            #ortInput {
+                width: 65%;
+            }
+            input[type="text"],
+            textarea {
+                width: 75%;
+            }
+            input[type="number"] {
+                width: 10%;
+            }
+            input[type="file"]::file-selector-button {
+                border: none;
+                cursor: pointer;
+                background-color: $basicButtonBlue-lighter;
+                color: $basicWhite;
+                padding: 5%;
+                border-radius: 5px;
+            }
+            input[type="radio"] {
+                -moz-appearance: None;
+                -webkit-appearance: none;
+                background: $basicWhite;
+                border-radius: 50%;
+                border: 1px solid #c4c4c4;
+                padding: 8px;
+            }
+            input[type="radio"]:checked {
+                background: $basicButtonBlue-full;
+                padding: 8px;
+            }
+            label {
+                width: 10%;
+            }
+            .lastLabel {
+                width: fit-content;
+            }
+        }
+        .formWrapPersonal-Div {
+            margin: 20% 0 0 0;
+            .hideArrows {
+                -moz-appearance: textfield;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+        }
+        .formSubmit {
+            text-align: center;
+            cursor: pointer;
+            display: block;
+            border: none;
+            margin: 0 auto;
+            transition: all 0.2s;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+// ################################# MediaQueries IPhone 12pro #################################
+
+@media only screen and (max-width: 390px) {
+    .addProduct-Sec {
+        background-size: 100%;
+        padding: 0 0 10% 0;
+        margin: 15% 0 0 0;
+        form {
+            .formWrap-Div {
+                width: 85%;
+                margin: 5% 0 8% 2%;
+                p {
+                    width: 28%;
+                }
+                .zustand {
+                    margin-right: 12%;
+                }
+                .preis {
+                    margin-right: 18%;
+                }
+                #ortInput {
+                    width: 52%;
+                }
+                input[type="text"],
+                textarea {
+                    width: 65%;
+                }
+                input[type="number"] {
+                    width: 10%;
+                }
+                input[type="file"]::file-selector-button {
+                    padding: 3%;
+                    border-radius: 5px;
+                }
+                input[type="radio"] {
+                    padding: 6px;
+                }
+                input[type="radio"]:checked {
+                    padding: 6px;
+                }
+                label {
+                    width: 25%;
+                    font-size: 0.85rem;
+                }
+            }
+            .formWrapPersonal-Div {
+                margin: 3% 0 0 0;
+            }
+            .formSubmit {
+                padding: 15px 20px;
+            }
+        }
+    }
+}

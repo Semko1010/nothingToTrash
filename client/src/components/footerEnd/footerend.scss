@@ -1,0 +1,51 @@
+.footerEnd {
+    display: flex;
+    justify-content: center;
+     padding: 1% 0;
+     margin-right: 10%;
+       
+    .logo {
+    margin-right: 2%;
+    }  
+}
+
+// ################################################################################
+// ################################# MediaQueries #################################
+// ################################################################################
+
+@media only screen and (max-width: 820px){
+.footerEnd {
+    display: flex;
+    justify-content: center;
+     padding: 1% 0;
+     margin-right: 10%;       
+    .logo {
+    margin-right: 2%;
+    }  
+}
+}
+
+// ################################# MediaQueries IPhone 12pro #################################
+
+@media only screen and (max-width: 390px){
+.footerEnd {
+     padding: 3% 0;
+    p{
+     font-size: 0.71rem; 
+     width: 150%;   
+    }  
+        .logo {
+    margin-right: 0.1%;
+  
+    }
+    .last{
+        width: 55%;
+      
+    }
+}
+
+
+
+
+
+}

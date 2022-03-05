@@ -1,0 +1,17 @@
+// sass --watch assets/scss/main.scss assets/css/style.css
+@import "_base.scss";
+
+// Components
+@import "../components/nav/nav.scss";
+@import "../components/footer/footer.scss";
+@import "../components/footerEnd/footerend.scss";
+// Pages
+@import "../pages/home/home.scss";
+@import "../pages/login/login.scss";
+@import "../pages/marktplatz/marktplatzItem.scss";
+@import "../pages/ueberuns/ueberuns.scss";
+@import "../pages/addProduct/addProduct.scss";
+@import "../pages/wishlist/wishlist.scss";
+@import "../pages/detailPage/detailPage.scss";
+
+@import "_components.scss";

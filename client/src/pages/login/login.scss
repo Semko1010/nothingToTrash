@@ -1,0 +1,101 @@
+.login-Sec,
+.register-Sec {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../img/loginBack.svg") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+    div {
+        width: 40%;
+        margin: 5% 0 0 0;
+        h2 {
+            width: 65%;
+            margin: 0 auto;
+        }
+        article {
+            width: 100%;
+            background-color: $basicWhite;
+            padding: 10%;
+            margin: 7% 0;
+            border-radius: 10px;
+            box-shadow: 0px 26px 37px rgba(13, 22, 36, 0.363055);
+            h2 {
+                width: 100%;
+                margin: 0 0 10% 0;
+            }
+            form {
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 2%;
+                    border: 1px solid rgba(0, 0, 0, 0.201228);
+                    border-radius: 5px;
+                    margin: 5% 0;
+                }
+                .btn-primary {
+                    cursor: pointer;
+                    border: none;
+                    background-color: $loginButton;
+                    transition: all 0.2s;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ################################# MediaQueries IPhone 12pro #################################
+
+@media only screen and (max-width: 390px){
+.login-Sec,
+.register-Sec {
+    background-size: 136%;
+    div {
+        width: 60%;
+        margin: 5% 0 0 0;
+        h2 {
+            font-size: 1.4rem;
+            width: 56%;
+            line-height: 1.8rem;
+        }
+        article {
+            width: 100%;
+            padding: 10%;
+            margin: 7% 0;
+            h2 {
+                width: 100%;
+                margin: 0 0 10% 0;
+            }
+            form {
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 2%;
+                    border-radius: 5px;
+                    margin: 5% 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
